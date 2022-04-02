@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+body{
+    background-color: #333;
+}
+.header {
+ 
+  margin: 0px;
+  padding: 15px;
+  display: flex;
+  
+}
+
+
+.navbar {
+  background-color:black;
+ 
+}
+nav {
+  display: inline-block;
+}
+
+li {
+  display: inline-block;
+  padding: 16px;
+}
+li a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: lightblue;
+}
+a:active {
+  color: yellow;
+}
+h1{
+    color: white;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+}
+
+.leftside {
+  flex: 50%;
+  
+  padding: 20px;
+}
+
+.rightside {
+  flex: 50%;
+  
+  padding: 20px;
+}
+.ratingBox{
+    width:90%;
+    height:25px;
+    background-color: red;
+}
+.rating{
+    height:25px;
+    background-color: green;
+    width:5%;
+    transition: width 3s;
+}
+.rating:hover{
+    width:90%; 
+
+}
+.News{
+  display: flex;
+  flex:100%;
+  flex-wrap: wrap;
+  background-color: white;
+}
+.NewsLeft {
+  flex: 50%;  
+  padding: 20px;
+}
+
+.NewsRight {
+  flex: 50%;
+  padding: 20px;
+}
+.newsText{
+  font-size: x-large;
+}
+.footer{
+  text-align:center;
+  width:100%;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  margin: 1px;
+  }
+  @media  screen and (max-width:600px) {
+    .row{
+      flex-direction:column;
+
+    }
+    .newsText{
+      font-size: medium;
+    }
+   
+  }
+  @media  screen and (min-width:600px )and (max-width:768px) {
+    .row{
+      flex-direction:column;
+
+    }
+    .newsText{
+      font-size: large;
+    }
+  }

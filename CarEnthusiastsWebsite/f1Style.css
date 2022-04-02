@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: red;
+}
+.header {
+    margin: 0px;
+    padding: 15px;
+    display: flex;
+   
+  }
+  .navbar {
+    background-color:black;
+    
+  }
+  nav {
+    display: inline-block;
+  }
+  
+  li {
+    display: inline-block;
+    padding: 16px;
+  }
+  li a {
+    text-decoration: none;
+    color: white;
+  }
+  a:hover {
+    color: lightblue;
+  }
+  a:active {
+    color: yellow;
+  }
+  table{
+      border-collapse: collapse;
+      width: 100%;
+      background-color:black;
+      color: white;
+      font-size: 32px;
+     
+  }
+  th,td{
+      text-align: left;
+      padding:8px;
+  }
+  tr:nth-child(even){
+      background-color: #333;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .news {
+    flex: 30%;
+    padding: 20px;
+    background-color: #333;
+  }
+  
+  .teams {
+    flex: 70%;
+    padding: 20px;
+    background-color: red;
+  }
+  .teams h2,h1{
+    color:white;
+  }
+  .grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: red;
+    min-height: 6.3%;
+  }
+  .footer{
+    text-align:center;
+    width:100%;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    margin: 1px;
+    }
+    @media  screen and (max-width:768px) {
+      table{
+        font-size: larger;
+  
+      }
+      th img{
+        height:16px;
+      }
+      .row{
+        flex-direction: column;
+      }
+     
+    }
+    @media  screen and (min-width:768px)and (max-width:900px) {
+      table{
+        font-size: x-large;
+  
+      }
+    }
+    @media  screen and (min-width:900px) and (max-width:1200px){
+      table{
+        font-size: xx-large;
+  
+      }
+    }
